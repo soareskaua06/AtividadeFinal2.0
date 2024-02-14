@@ -1,0 +1,154 @@
+Wed Feb 14 19:43:00 BRT 2024 : Apache Derby Servidor de Rede - 10.14.2.0 - (1828579) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+----------------------------------------------------------------
+Wed Feb 14 19:44:27 BRT 2024:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instância a816c00e-018d-a9c9-a378-00006948afc3
+no diretório de banco de dados C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main\usuarios 
+
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.8+9-LTS-211
+user.dir=C:\Program Files\Java\jdk-17\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Feb 14 19:44:29 BRT 2024:
+Encerrando a instância a816c00e-018d-a9c9-a378-00006948afc3
+Wed Feb 14 19:44:29 BRT 2024 Thread[DRDAConnThread_2,5,main] (DATABASE = usuarios), (DRDAID = {2}), Banco de dados 'usuarios' fechado.
+----------------------------------------------------------------
+Wed Feb 14 19:44:42 BRT 2024:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instância 6ede40af-018d-a9c9-a378-00006948afc3
+no diretório de banco de dados C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main\sample 
+
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.8+9-LTS-211
+user.dir=C:\Program Files\Java\jdk-17\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Feb 14 19:44:58 BRT 2024:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instância f67740d7-018d-a9c9-a378-00006948afc3
+no diretório de banco de dados C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main\usuarios 
+
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.8+9-LTS-211
+user.dir=C:\Program Files\Java\jdk-17\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+Wed Feb 14 19:46:07 BRT 2024 Thread[DRDAConnThread_4,5,main] Cleanup action starting
+java.sql.SQLException: Banco de dados 'BancoBiblioteca' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XJ004: Banco de dados 'BancoBiblioteca' não encontrado.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 21 more
+============= begin nested exception, level (1) ===========
+ERROR XJ004: Banco de dados 'BancoBiblioteca' não encontrado.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Wed Feb 14 19:46:07 BRT 2024 Thread[DRDAConnThread_4,5,main] (DATABASE = BancoBiblioteca), (DRDAID = {6}), Banco de dados 'BancoBiblioteca' não encontrado.
+----------------------------------------------------------------
+Wed Feb 14 19:47:41 BRT 2024:
+Shutting down instance 6ede40af-018d-a9c9-a378-00006948afc3 on database directory C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main\sample with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+Wed Feb 14 19:47:41 BRT 2024 Thread[DRDAConnThread_4,5,main] (DATABASE = sample), (DRDAID = {7}), Database 'sample' shutdown.
+----------------------------------------------------------------
+Wed Feb 14 19:47:48 BRT 2024:
+Encerrando a instância f67740d7-018d-a9c9-a378-00006948afc3
+Wed Feb 14 19:47:48 BRT 2024 Thread[DRDAConnThread_4,5,main] (DATABASE = usuarios), (DRDAID = {8}), Banco de dados 'usuarios' fechado.
+----------------------------------------------------------------
+Wed Feb 14 19:48:35 BRT 2024:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instância 856dc0f6-018d-a9c9-a378-00006948afc3
+no diretório de banco de dados C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main\usuarios 
+
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.8+9-LTS-211
+user.dir=C:\Program Files\Java\jdk-17\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Feb 14 19:48:38 BRT 2024:
+Encerrando a instância 856dc0f6-018d-a9c9-a378-00006948afc3
+Wed Feb 14 19:48:38 BRT 2024 Thread[DRDAConnThread_4,5,main] (DATABASE = usuarios), (DRDAID = {10}), Banco de dados 'usuarios' fechado.
+----------------------------------------------------------------
+Wed Feb 14 19:48:55 BRT 2024:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instância ce520191-018d-a9c9-a378-00006948afc3
+no diretório de banco de dados C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main\usuarios 
+
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.8+9-LTS-211
+user.dir=C:\Program Files\Java\jdk-17\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Feb 14 19:48:56 BRT 2024:
+Encerrando a instância ce520191-018d-a9c9-a378-00006948afc3
+Wed Feb 14 19:48:56 BRT 2024 Thread[DRDAConnThread_4,5,main] (DATABASE = usuarios), (DRDAID = {12}), Banco de dados 'usuarios' fechado.
+----------------------------------------------------------------
+Wed Feb 14 19:54:26 BRT 2024:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instância a1f24232-018d-a9c9-a378-00006948afc3
+no diretório de banco de dados C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main\usuarios 
+
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.8+9-LTS-211
+user.dir=C:\Program Files\Java\jdk-17\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Aluno(a) TDS Noite\Desktop\TrabalhoFinal-main
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
